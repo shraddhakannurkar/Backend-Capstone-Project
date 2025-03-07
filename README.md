@@ -73,30 +73,39 @@ Before running this project, ensure you have the following installed:
 
 1. Clone the repository
 
-```bash
-git clone https://github.com/shraddhakannurkar/Backend-Capstone-Project.git
-cd Backend-Capstone-Project
-Set up the Database Create a new MySQL/PostgreSQL database and update your credentials in application.properties (see the Configuration section below).
-Configuration
+- bash
+- git clone https://github.com/shraddhakannurkar/Backend-Capstone-Project.git
+- cd Backend-Capstone-Project
+- Set up the Database Create a new MySQL/PostgreSQL database and update your credentials in application.properties (see the Configuration section below).
+
+---
+
+## Configuration
 Modify src/main/resources/application.properties (or application.yml if using YAML) to configure database credentials:
 
-For MySQL:
-
+**For MySQL:**
+```
 properties
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
 spring.datasource.username=root
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-For PostgreSQL:
 
+```
+**For PostgreSQL:**
+```
 properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
 spring.datasource.username=postgres
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-Running the Project
+```
+---
+
+## Running the Project
+
 Build the project
 bash
 mvn clean install
@@ -108,7 +117,10 @@ or
 bash
 java -jar target/Backend-Capstone-Project-0.0.1-SNAPSHOT.jar
 Verify it’s running Once the server starts, you can access the API at: http://localhost:8080
-API Endpoints
+
+---
+
+## API Endpoints
 Here are some example endpoints (modify according to your project):
 
 HTTP Method	Endpoint	Description
@@ -120,14 +132,18 @@ PUT	/api/users/{id}	Update user information
 DELETE	/api/users/{id}	Delete a user
 You can check Swagger API Documentation at: http://localhost:8080/swagger-ui/index.html
 
-Testing
+---
+
+## Testing
 Run tests using:
 
 bash
 mvn test
 If using JUnit and Mockito, ensure test cases are written in src/test/java.
 
-Deployment
+---
+
+## Deployment
 Docker Deployment
 Build the Docker image:
 bash
@@ -138,7 +154,9 @@ docker run -p 8080:8080 backend-capstone
 Cloud Deployment
 Can be deployed to AWS, Heroku, or Google Cloud using CI/CD pipelines. Modify application.properties for cloud-specific database configurations.
 
-Contributing
+---
+
+## Contributing
 Contributions are welcome! Follow these steps:
 
 Fork the repository.
@@ -152,7 +170,10 @@ Push to the branch:
 bash
 git push origin feature/your-feature-name
 Open a Pull Request.
-Acknowledgements
+
+---
+
+## Acknowledgements
 Thanks to Spring Boot Documentation for guidance. Thanks to contributors and open-source libraries that made this project possible.
 
 📌 Feel free to update this README as per your project needs! 🚀
