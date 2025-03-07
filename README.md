@@ -71,7 +71,7 @@ Before running this project, ensure you have the following installed:
 
 ## Installation
 
-### 1️⃣ Clone the repository
+1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/shraddhakannurkar/Backend-Capstone-Project.git
@@ -101,6 +101,7 @@ spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
+---
 
 ## Running the Project
 1️⃣ Build the project
@@ -123,6 +124,8 @@ java -jar target/Backend-Capstone-Project-0.0.1-SNAPSHOT.jar
 Once the server starts, you can access the API at:
 http://localhost:8080
 
+---
+
 ## API Endpoints
 Here are some example endpoints (modify according to your project):
 
@@ -136,6 +139,9 @@ DELETE	/api/users/{id}	Delete a user
 You can check Swagger API Documentation at:
 http://localhost:8080/swagger-ui/index.html
 
+---
+
+
 ## Testing
 Run tests using:
 
@@ -144,6 +150,8 @@ Copy
 Edit
 mvn test
 If using JUnit and Mockito, ensure test cases are written in src/test/java.
+
+---
 
 ## Deployment
 Docker Deployment
@@ -161,6 +169,8 @@ docker run -p 8080:8080 backend-capstone
 Cloud Deployment
 Can be deployed to AWS, Heroku, or Google Cloud using CI/CD pipelines.
 Modify application.properties for cloud-specific database configurations.
+
+---
 
 ## Contributing
 Contributions are welcome! Follow these steps:
@@ -181,6 +191,8 @@ Copy
 Edit
 git push origin feature/your-feature-name
 Open a Pull Request.
+
+---
 
 ## Acknowledgements
 Thanks to Spring Boot Documentation for guidance.
