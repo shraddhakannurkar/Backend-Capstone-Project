@@ -102,7 +102,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
 
-## **Running the Project**
+## Running the Project
 1️⃣ Build the project
 bash
 Copy
@@ -123,7 +123,7 @@ java -jar target/Backend-Capstone-Project-0.0.1-SNAPSHOT.jar
 Once the server starts, you can access the API at:
 http://localhost:8080
 
-## **API Endpoints**
+## API Endpoints
 Here are some example endpoints (modify according to your project):
 
 HTTP Method	Endpoint	Description
@@ -136,7 +136,7 @@ DELETE	/api/users/{id}	Delete a user
 You can check Swagger API Documentation at:
 http://localhost:8080/swagger-ui/index.html
 
-## **Testing**
+## Testing
 Run tests using:
 
 bash
@@ -145,7 +145,7 @@ Edit
 mvn test
 If using JUnit and Mockito, ensure test cases are written in src/test/java.
 
-## **Deployment**
+## Deployment
 Docker Deployment
 1️⃣ Build the Docker image:
 bash
@@ -162,7 +162,7 @@ Cloud Deployment
 Can be deployed to AWS, Heroku, or Google Cloud using CI/CD pipelines.
 Modify application.properties for cloud-specific database configurations.
 
-## **Contributing**
+## Contributing
 Contributions are welcome! Follow these steps:
 Fork the repository.
 Create a new branch:
@@ -182,7 +182,7 @@ Edit
 git push origin feature/your-feature-name
 Open a Pull Request.
 
-## **Acknowledgements**
+## Acknowledgements
 Thanks to Spring Boot Documentation for guidance.
 Thanks to contributors and open-source libraries that made this project possible.
 📌 Feel free to update this README as per your project needs! 🚀
